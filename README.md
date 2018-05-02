@@ -2,6 +2,7 @@
 
 ### This is to accomplish Project 1 for Udacity Nanodegree course (Front-End Web Dev)
 **Files:**
+
 | File type | Description | File name |
 | ------ | ------ |------ |
 | HTML | Page contents | mysite.html|
