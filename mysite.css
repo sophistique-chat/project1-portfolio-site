@@ -1,0 +1,235 @@
+/*For screens bigger than 1024px wide*/
+
+@media screen and (min-width: 1024px) {
+
+/*Applying styling for main elements and styling general for several classes*/
+
+    body {
+        max-width: 100%;
+       max-height: auto;
+    }
+
+    .main {
+        width: inherit;
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    .side-info,
+    .central-section,
+    .bottom-figure {
+        box-shadow: 2px 2px 19px 0px rgba(0, 0, 0, 0.49);
+        border-radius: 7px;
+        text-align: center;
+    }
+
+    .header, .footer {
+        width: 100%;
+        
+        background-color: #D8CACC;
+        color: #6C3363;
+    }
+
+    .header {
+        font: 1.3em/1.5 'Satisfy', cursive;
+        order: 0;
+        height: 4.5em;
+    }
+
+    .footer {
+        font: 2.3em/1 'Josefin Slab', serif;
+        height: 3.5em;
+        margin-top: 12em;
+        padding: 1.5em 0 0 1em;
+    }
+
+    .header-text {
+        position: absolute;
+        margin: 0.8em 0 0 1em;
+        color: #6C3363;
+        font: 2.2em/1.2 'Satisfy', cursive;
+    }
+
+    .top-info {
+        width: 100%;
+        height: 5em;
+        order: 0;
+    }
+
+    .logo {
+        position: absolute;
+        float: left;
+        height: 6.5em;
+        width: 6.5em;
+        margin: -0.6em 1em 0 1.6em;
+    }
+
+    .dev-name {
+        font: 2.5em/1 'Josefin Slab', serif;
+        text-align: right;
+    }
+
+/*Styling central part of the page*/
+
+    .cent-text {
+        font: 1.6em/1 'Josefin Slab', serif;
+        font-weight: 800;
+        margin: 9.5em 0 0 3.5em;
+        color: #6B3362;
+        text-decoration: underline;
+    }
+
+    .main-font {
+        font: 2.1em/1 'Josefin Slab', sans-serif;
+        padding: 0.7em 0 0.7em;
+    }
+
+    .central-section {
+        margin: 1em;
+        width: 95%;
+        height: 18em;
+        display: grid;
+        flex-flow: wrap;
+        background-image: url("https://github.com/sophistique-chat/my-pic-bin/blob/master/art-3129429_640.jpg?raw=true");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+/*Styling side menu of the page*/
+
+    .side-info {
+        width: 23%;
+        height: 60%;
+        margin-top: 11em;
+        background-color: #fff;
+        position: absolute;
+        -webkit-transform: translate(-180px, 0);
+        transform: translate(-180px, 0);
+        transition: transform 0.3s ease-in-out;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    .side-figure {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        align-content: stretch;
+    }
+
+    .side-img {
+        width: 30%;
+        height:30%;
+        order: 1;
+    }
+    
+    .side-text {
+        width: 50%;
+        margin-right: 0.4em;
+        margin-right: 0.4em;
+        margin-left: -1.4em;
+        font: 1.5em/1 'Josefin Slab', sans-serif;
+    }
+
+/*Styling bottom part of the page*/
+
+    .featured-work {
+        width: 100%;
+        height: 12em;
+        order: 3;
+    }
+
+    .work-examples {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0.2em;
+        overflow-x: scroll;
+    }
+
+    .feat-text {
+        height: 2em;
+        margin: 0.1em;
+        font: 2.8em/1 'Satisfy', cursive;
+        border-bottom: 1px solid #617F9A;
+    }
+
+    .bottom-figure {
+        width: 15em;
+        height: 14em;
+        margin: 1em 2em 1em 4em;
+        background-color: #fff;
+        box-shadow: 2px 2px 19px 0px rgba(0, 0, 0, 0.49);
+    }
+
+    .img {
+        max-width: 10em;
+        height: 8em;
+        padding: 0.7em;
+        background-color: #fff;
+    }
+
+    .bottom-font {
+        font: 2.08em/1 'Josefin Slab', serif;
+        width: 100%;
+        margin-top: 0.1em;
+    }
+
+    a {
+        color: #426622;
+    }
+
+    a:visited {
+        color: #947E9F;
+    }
+
+/*Adding a class for js open-close side menu function and enlarge the featured works*/
+
+    .open .side-info {
+        transform: translate(10px, 0) scale(1.05);
+        overflow-y: scroll;
+    }
+    
+    .open .central-info {
+        position: absolute;
+    }
+    
+    .enlarge-one .one {
+        transform: scale(1.1);
+        background-color: #fff;
+    }
+    
+    .enlarge-two .two {
+        transform: scale(1.1);
+        background-color: #fff;
+    }
+    
+    .enlarge-three .three {
+        transform: scale(1.1);
+        background-color: #fff;
+    }
+    
+    .enlarge-four .four {
+        transform: scale(1.1);
+        background-color: #fff;
+    }
+    
+    .enlarge-five .five {
+        transform: scale(1.1);
+        background-color: #fff;
+    }
+    
+    .enlarge-six .six {
+        transform: scale(1.1);
+        background-color: #fff;
+    }
+
+    .enlarge-central .central-section {
+        transition: transform 0.3s ease;
+        transform: translate(0, 20px) scale(1) rotate(180deg);
+    }
+}
+
+/*-------------------------------------*/
+
