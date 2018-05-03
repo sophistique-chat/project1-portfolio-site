@@ -12,10 +12,15 @@
 
 ----
 *__All images used to create this project were taken from www.pixabay.com, which means it's free for commercial use, no attribution required.__*
-
 ----
 
 This project is under continuous developement and is intended to be enhanced throughout the Udacity Nanodegree course for Front-End Web Dev.
 
 ----
+
+All links are placeholders. Side menu bar contains placeholder information and is intended to be adjusted for a different purpose in the future.
+
+----
+
+
  Developed by a proud Grow with Google scholarship recipient (USA, 2018)
